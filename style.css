@@ -1,108 +1,134 @@
 
 body{
-        margin-bottom: 7px;
+    margin-bottom: 7px;
     margin-top: 7px;
     margin-left: 4px;
     margin-right: 4px;
+    background-image:url(background.png) ;
+    background-position: center;
 }
 
+
+#home{
+    max-width:100%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    /*grid-template-areas:
+    
+        ". branding photography ."
+        ". illustration interactive .";
+    grid-row-gap: 10%;*/
+    
+}
+.branding{
+     grid-column: 3/ span 1;
+    margin-top: 100px;
+    margin-left: -20px;
+    /*grid-area: branding;
+    margin-top: 120px;
+    margin-left: 250px*/
+}
+.photography{
+   grid-column: 7/ span 1;
+     margin-left: -90px;
+    margin-top: -40px;
+   /* grid-area: photography;
+    margin-left: -110px;
+    margin-top: 35px;*/
+}
+.illustration{
+     grid-column: 6/ span 1;
+    margin-top: -65px;
+       margin-left:-50px;
+    /*grid-area: illustration;
+   margin-top: -125px;
+       margin-left:480px*/
+}
+.interactive{
+     grid-column: 11/ span 1;
+     margin-left: -140px;
+    margin-top:-170px;
+   /* grid-area: interactive;
+   margin-left: 50px;
+    margin-top:-180px;*/
+}
+
+
+#nav{
+		max-width: 100%;
+		margin: 0px;
+		display:grid;
+     grid-template-columns:repeat(12,1fr);
+	}
+	
 @media screen and (min-width:760px) {
 
-#huong{
-    max-width:700px;
+#home{
+    max-width:760px;
     margin: 0 auto;
-    display: grid;
-    /*grid-template-columns:repeat(12,1fr);*/
-    grid-template-areas:
+align-items: center;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+   /* grid-template-areas:
     
         ". branding photography ."
         ". illustration interactive .";
-    grid-row-gap: 15%;
+    grid-row-gap: 12%;
+    padding: -50px;*/
     
 }
 
-
-
-.about{
-     grid-column: 13/ span 1;
-        background-color:white;
-    margin: 5px;
-    font-family: "helvetica"
-}
 
 .branding{
-     /*grid-column: 3/ span 1;*/
-    grid-area: branding;
-    margin-top: 80px;
-    margin-left: 120px
+     grid-column: 3/ span 1;
+    margin-top: 100px;
+    margin-left: -20px;
+    /*grid-area: branding;
+    margin-top: 120px;
+    margin-left: 250px*/
 }
 .photography{
-    /* grid-column: 8/ span 1;*/
-    grid-area: photography;
-    margin-left: -150px;
+   grid-column: 7/ span 1;
+     margin-left: -90px;
+    margin-top: -40px;
+   /* grid-area: photography;
+    margin-left: -110px;
+    margin-top: 35px;*/
 }
 .illustration{
-    /* grid-column: 6/ span 1;*/
-    grid-area: illustration;
-   margin-top: -170px;
-       margin-left:340px
+     grid-column: 6/ span 1;
+    margin-top: -65px;
+       margin-left:-50px;
+    /*grid-area: illustration;
+   margin-top: -125px;
+       margin-left:480px*/
 }
 .interactive{
-     /*grid-column: 11/ span 1;*/
-    grid-area: interactive;
+     grid-column: 11/ span 1;
+     margin-left: -140px;
+    margin-top:-170px;
+   /* grid-area: interactive;
    margin-left: 50px;
-    margin-top:-220px;
+    margin-top:-180px;*/
 }
 
-@media only screen and (min-width:600px) {
-
-#huong{
-    max-width:700px;
-    margin: 0 auto;
-    display: grid;
-    /*grid-template-columns:repeat(12,1fr);*/
-    grid-template-areas:
-    
-        ". branding photography ."
-        ". illustration interactive .";
-    grid-row-gap: 15%;
-    
+#nav{
+		max-width: 100%;
+		margin: 0px;
+		display:grid;
+     grid-template-columns:repeat(12,1fr);
+	}
+	
+.work_me{
+	grid-column: 1/ span 2;
+	margin-top: 35px;
+	}
+.insta{
+		grid-column: 1/ span 2;
+	margin-left: 1305px;
+	}
 }
-
-
-
-.about{
-     grid-column: 13/ span 1;
-        background-color:white;
-    margin: 5px;
-    font-family: "helvetica"
-}
-
-.branding{
-     /*grid-column: 3/ span 1;*/
-    grid-area: branding;
-    margin-top: 80px;
-    margin-left: 120px
-}
-.photography{
-    /* grid-column: 8/ span 1;*/
-    grid-area: photography;
-    margin-left: -150px;
-}
-.illustration{
-    /* grid-column: 6/ span 1;*/
-    grid-area: illustration;
-   margin-top: -170px;
-       margin-left:340px
-}
-.interactive{
-     /*grid-column: 11/ span 1;*/
-    grid-area: interactive;
-   margin-left: 50px;
-    margin-top:-220px;
-}
-
-
 p{
     font-family: "Arial Rounded MT Bold";
 font-size: 24px;
@@ -111,9 +137,5 @@ font-size: 24px;
 }
 
 
-p1{
-color:wheat;
-font-family: "bodini";
-font-size: 25px;
-text-align: center;
-}
+
+
