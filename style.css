@@ -1,0 +1,119 @@
+
+body{
+        margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+@media screen and (min-width:760px) {
+
+#huong{
+    max-width:700px;
+    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns:repeat(12,1fr);*/
+    grid-template-areas:
+    
+        ". branding photography ."
+        ". illustration interactive .";
+    grid-row-gap: 15%;
+    
+}
+
+
+
+.about{
+     grid-column: 13/ span 1;
+        background-color:white;
+    margin: 5px;
+    font-family: "helvetica"
+}
+
+.branding{
+     /*grid-column: 3/ span 1;*/
+    grid-area: branding;
+    margin-top: 80px;
+    margin-left: 120px
+}
+.photography{
+    /* grid-column: 8/ span 1;*/
+    grid-area: photography;
+    margin-left: -150px;
+}
+.illustration{
+    /* grid-column: 6/ span 1;*/
+    grid-area: illustration;
+   margin-top: -170px;
+       margin-left:340px
+}
+.interactive{
+     /*grid-column: 11/ span 1;*/
+    grid-area: interactive;
+   margin-left: 50px;
+    margin-top:-220px;
+}
+
+@media only screen and (min-width:600px) {
+
+#huong{
+    max-width:700px;
+    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns:repeat(12,1fr);*/
+    grid-template-areas:
+    
+        ". branding photography ."
+        ". illustration interactive .";
+    grid-row-gap: 15%;
+    
+}
+
+
+
+.about{
+     grid-column: 13/ span 1;
+        background-color:white;
+    margin: 5px;
+    font-family: "helvetica"
+}
+
+.branding{
+     /*grid-column: 3/ span 1;*/
+    grid-area: branding;
+    margin-top: 80px;
+    margin-left: 120px
+}
+.photography{
+    /* grid-column: 8/ span 1;*/
+    grid-area: photography;
+    margin-left: -150px;
+}
+.illustration{
+    /* grid-column: 6/ span 1;*/
+    grid-area: illustration;
+   margin-top: -170px;
+       margin-left:340px
+}
+.interactive{
+     /*grid-column: 11/ span 1;*/
+    grid-area: interactive;
+   margin-left: 50px;
+    margin-top:-220px;
+}
+
+
+p{
+    font-family: "Arial Rounded MT Bold";
+font-size: 24px;
+    color:#8502a5;
+    text-align: right
+}
+
+
+p1{
+color:wheat;
+font-family: "bodini";
+font-size: 25px;
+text-align: center;
+}
