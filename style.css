@@ -1,7 +1,6 @@
 
 body{
   margin:0px;
-    background-image:url(background.png) ;
     background-position: center;
 }
 
@@ -15,9 +14,98 @@ body{
     border-left: 10px  solid ;
     border-color: moccasin;}
 	
+#header{
+		grid-column: 1/5;
+		display: grid;
+		grid-template-columns: 4/1fr;
+		padding:10px;
+	}
+	.logo{
+			grid-column: 1/1;
 
-@media screen and (min-width:768px) {
+	}
+	.about{
+		grid-column: 4/4;
+		margin-top: -5px;
+		margin-right: 13px;
+	}
+	.rynniev{
+		grid-column: 4/5;
+		justify-self:end;
+		margin-right: 2px;
+		margin-top: -50px;
+	}
+
+#flowers{
+max-width:900px;
+    margin: 0 auto;
+align-items: center;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+	  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+	}
+.flower1{
+	grid-column: 3/ span 1;
+  margin-top: 120px;
+    margin-left: 10px;
+
+}
+.flower2{
+    grid-column: 7/ span 1;
+     margin-left: -120px;
+    margin-top: -30px;
+   
+}
+.flower3{
+ grid-column: 6/ span 1;
+  margin-top: -65px;
+       margin-left:-60px;
+   
+}
+.flower4{    
+	grid-column: 11/ span 1;
+    margin-left: -130px;
+    margin-top:-120px;
+  
+ } 
+
+#footer{
+	grid-column: 1/6;
+	grid-template-columns: 4/1fr;
+	display: grid;
+}
+.work_me{
+	grid-column: 1/1;
+	vertical-align:baseline;
+	padding-left:5px;
+	margin-top: 500px;
+
 	
+}
+#contact{
+	grid-column: 5/5;
+	justify-self:end;
+margin-top: 440px;
+	padding-right: 5px;
+}
+
+p{
+    font-family: "Arial Rounded MT Bold";
+font-size: 21px;
+    color:#8502a5;
+    text-align: right
+}
+
+/*desktop site*/
+@media screen and (min-width:768px) {
+	body{
+  margin:0px;
+    background-image:url(background.png) ;
+		background-position: center;}
+		
 	#home{
 	max-width:100%;
     margin: 0px;
