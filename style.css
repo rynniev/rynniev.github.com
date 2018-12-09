@@ -1,7 +1,7 @@
 
 body{
   margin:0px;
-    background-position: center;
+  background-position: center;
 }
 
 #home{
@@ -22,7 +22,6 @@ body{
 	}
 	.logo{
 			grid-column: 1/1;
-
 	}
 	.about{
 		grid-column: 4/4;
@@ -40,7 +39,7 @@ body{
 max-width:900px;
     margin: 0 auto;
 align-items: center;
-    display:grid;
+    display:inline;
     grid-template-columns:repeat(12,1fr);
 	  position: absolute;
   left: 50%;
@@ -48,27 +47,27 @@ align-items: center;
   transform: translate(-50%, -50%);
 	}
 .flower1{
-	grid-column: 3/ span 1;
-  margin-top: 120px;
-    margin-left: 10px;
+	grid-column: 1/ span 1;
+  margin-top: 600px;
+    margin-left: -70px;
 
 }
 .flower2{
-    grid-column: 7/ span 1;
-     margin-left: -120px;
-    margin-top: -30px;
+    grid-column: 6/ span 1;
+     margin-left: -5px;
+    margin-top: 150px;
    
 }
 .flower3{
  grid-column: 6/ span 1;
-  margin-top: -65px;
+  margin-top: -305px;
        margin-left:-60px;
    
 }
 .flower4{    
 	grid-column: 11/ span 1;
-    margin-left: -130px;
-    margin-top:-120px;
+    margin-left: -500px;
+    margin-top:120px;
   
  } 
 
