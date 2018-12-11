@@ -19,6 +19,7 @@ body{
 		display: grid;
 		grid-template-columns: 4/1fr;
 		padding:10px;
+	
 	}
 	.logo{
 			grid-column: 1/1;
@@ -27,47 +28,49 @@ body{
 		grid-column: 4/4;
 		margin-top: -5px;
 		margin-right: 13px;
+		justify-self:end;
 	}
 	.rynniev{
 		grid-column: 4/5;
 		justify-self:end;
 		margin-right: 2px;
-		margin-top: -50px;
+		margin-top: -70px;
 	}
 
 #flowers{
 max-width:900px;
     margin: 0 auto;
-align-items: center;
-    display:inline;
+align-items:center;
+    display:grid;
     grid-template-columns:repeat(12,1fr);
 	  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
 	}
 .flower1{
 	grid-column: 1/ span 1;
-  margin-top: 600px;
-    margin-left: -70px;
+  margin-top: 220px;
+    margin-left: 0px;
 
 }
 .flower2{
     grid-column: 6/ span 1;
-     margin-left: -5px;
-    margin-top: 150px;
+     margin-left: -10px;
+    margin-top: -40px;
    
 }
 .flower3{
  grid-column: 6/ span 1;
-  margin-top: -305px;
-       margin-left:-60px;
+  margin-top: -285px;
+       margin-left:40px;
    
 }
 .flower4{    
 	grid-column: 11/ span 1;
     margin-left: -500px;
-    margin-top:120px;
+    margin-top:0px;
   
  } 
 
@@ -80,15 +83,17 @@ align-items: center;
 	grid-column: 1/1;
 	vertical-align:baseline;
 	padding-left:5px;
-	margin-top: 500px;
+	margin-top: 490px;
+	position:fixed;
 
 	
 }
 #contact{
 	grid-column: 5/5;
 	justify-self:end;
-margin-top: 440px;
+margin-top: 430px;
 	padding-right: 5px;
+	
 }
 
 p{
@@ -120,6 +125,7 @@ font-size: 21px;
 		display: grid;
 		grid-template-columns: 4/1fr;
 		padding:10px;
+	
 	}
 	.logo{
 			grid-column: 1/1;
@@ -129,6 +135,7 @@ font-size: 21px;
 		grid-column: 4/4;
 		margin-top: -5px;
 		margin-right: 13px;
+		
 	}
 	.rynniev{
 		grid-column: 4/5;
@@ -191,13 +198,14 @@ align-items: center;
 	justify-self:end;
 margin-top: 440px;
 	padding-right: 5px;
+		
 }
 
 p{
     font-family: "Arial Rounded MT Bold";
 font-size: 21px;
     color:#8502a5;
-    text-align: right
+    text-align: right;
 }
 
 
