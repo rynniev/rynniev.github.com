@@ -9,7 +9,8 @@ body{
     margin: 0px;
 		display: grid;
     grid-template-columns:repeat(4,1fr);
-		min-height: 800px;
+	
+		min-height: 750px;
     border-right: 10px solid;
     border-left: 10px  solid ;
     border-color: moccasin;}
@@ -34,45 +35,49 @@ body{
 		grid-column: 4/5;
 		justify-self:end;
 		margin-right: 2px;
-		margin-top: -70px;
+		margin-top: -40px;
 	}
 
-#flowers{
+#branding{
 max-width:900px;
     margin: 0 auto;
-align-items:center;
+align-items: center;
     display:grid;
     grid-template-columns:repeat(12,1fr);
 	  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
 	}
-.flower1{
-	grid-column: 1/ span 1;
-  margin-top: 220px;
-    margin-left: 0px;
-
-}
-.flower2{
-    grid-column: 6/ span 1;
-     margin-left: -10px;
-    margin-top: -40px;
-   
-}
-.flower3{
- grid-column: 6/ span 1;
-  margin-top: -285px;
-       margin-left:40px;
-   
-}
-.flower4{    
-	grid-column: 11/ span 1;
-    margin-left: -500px;
-    margin-top:0px;
-  
- } 
+#branding{
+max-width:700px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+	  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+	}
+.tittle-branding{	
+	grid-column: 1/13;
+	margin-top:50px;
+	margin-left:-15%;
+	 width: 100%;
+	}
+	.puzzle-branding-1{
+		grid-column: 2/3;
+	margin-top: 170px;
+	margin-left:-40px;
+	 width: auto;
+	}
+	.puzzle-branding-2{
+		grid-column: 7/12;
+	margin-top: -180px;
+	margin-left:-70px;
+ width: auto;
+	}
+	
 
 #footer{
 	grid-column: 1/6;
@@ -83,7 +88,7 @@ align-items:center;
 	grid-column: 1/1;
 	vertical-align:baseline;
 	padding-left:5px;
-	margin-top: 490px;
+	margin-top: 500px;
 	position:fixed;
 
 	
@@ -91,7 +96,7 @@ align-items:center;
 #contact{
 	grid-column: 5/5;
 	justify-self:end;
-margin-top: 430px;
+margin-top: 450px;
 	padding-right: 5px;
 	
 }
@@ -108,7 +113,7 @@ font-size: 21px;
 @media screen and (min-width:768px) {
 	body{
   margin:0px;
-    background-image:url(background.png) ;
+background-image: url(branding_back.gif) ;
 		background-position: center;}
 		
 	#home{
@@ -145,10 +150,9 @@ font-size: 21px;
 		margin-top: -50px;
 	}
 
-#flowers{
-max-width:900px;
+#branding{
+max-width:700px;
     margin: 0 auto;
-align-items: center;
     display:grid;
     grid-template-columns:repeat(12,1fr);
 	  position: absolute;
@@ -156,31 +160,22 @@ align-items: center;
   top: 50%;
   transform: translate(-50%, -50%);
 	}
-.flower1{
-	grid-column: 3/ span 1;
-  margin-top: 120px;
-    margin-left: 10px;
-
-}
-.flower2{
-    grid-column: 7/ span 1;
-     margin-left: -120px;
-    margin-top: -30px;
-   
-}
-.flower3{
- grid-column: 6/ span 1;
-  margin-top: -65px;
-       margin-left:-60px;
-   
-}
-.flower4{    
-	grid-column: 11/ span 1;
-    margin-left: -130px;
-    margin-top:-120px;
-  
- } 
-
+.tittle-branding{	
+	grid-column: 1/13;
+	margin-top:70px;
+	margin-left:-140px;
+	}
+	.puzzle-branding-1{
+		grid-column: 2/3;
+	margin-top: 80px;
+	margin-left:-120px;
+	}
+	.puzzle-branding-2{
+		grid-column: 7/12;
+	margin-top: -240px;
+	margin-left:0px;
+	}
+	
 #footer{
 	grid-column: 1/6;
 	grid-template-columns: 4/1fr;
@@ -210,7 +205,5 @@ font-size: 21px;
     text-align: right;
 		text-decoration: none;
 }
-
-
 
 
