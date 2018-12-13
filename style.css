@@ -51,7 +51,7 @@ align-items:center;
 	}
 .flower1{
 	grid-column: 1/ span 1;
-  margin-top: 220px;
+  margin-top: 160px;
     margin-left: 0px;
 
 }
@@ -63,14 +63,14 @@ align-items:center;
 }
 .flower3{
  grid-column: 6/ span 1;
-  margin-top: -285px;
-       margin-left:40px;
+  margin-top: -15px;
+       margin-left:30px;
    
 }
 .flower4{    
-	grid-column: 11/ span 1;
-    margin-left: -500px;
-    margin-top:0px;
+	grid-column: 1/ span 1;
+    margin-left: 45px;
+    margin-top:-40px;
   
  } 
 
