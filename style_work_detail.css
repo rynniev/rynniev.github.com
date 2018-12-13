@@ -3,7 +3,7 @@ body{
   margin:0px;
   background-position: center;
 }
-
+@media screen and (max-width:767px) {
 #home{
 	max-width:100%;
     margin: 0px;
@@ -45,14 +45,27 @@ justify-self:center;
 
 	 }
 
-	
-
+.videoDiv{
+justify-self:center;
+ width: 70%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
+		
+}	
+	.color_palette{
+		margin-top: 100px;
+width: 62%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
+		
+	}
 #footer{
 	grid-column: 1/6;
 	grid-template-columns: 4/1fr;
 	display: grid;
 }
 .work_me{
+	display: none;
 	grid-column: 1/1;
 	vertical-align:baseline;
 	padding-left:5px;
@@ -61,7 +74,7 @@ justify-self:center;
 
 	
 }
-#contact{
+#contact{display: none;
 	grid-column: 5/5;
 	justify-self:end;
 margin-top: 450px;
@@ -76,7 +89,7 @@ font-size: 21px;
     text-align: right;
 		text-decoration: none;
 }
-
+}
 /*desktop site*/
 @media screen and (min-width:768px) {
 	body{
@@ -121,29 +134,41 @@ font-size: 21px;
 #cup_detail{
 	grid-column: 2/4;
 justify-self:center;
-margin-top: -13%;
-
-
+margin-top: -10%;
 	 
+	}
+	
+	.videoDiv{
+    width: 40%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
+		
+}
+	.color_palette{
+		margin-top: 100px;
+width: 80%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
 	}
 #footer{
 	grid-column: 1/6;
 	grid-template-columns: 4/1fr;
 	display: grid;
+	 
 }
 .work_me{
 	grid-column: 1/1;
 	vertical-align:baseline;
 	padding-left:5px;
-	margin-top: 500px;
-
+	margin-top: -40px;
 	
 }
 #contact{
 	grid-column: 5/5;
 	justify-self:end;
-margin-top: 440px;
+margin-top: -100px;
 	padding-right: 5px;
+
 		
 }
 
